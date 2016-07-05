@@ -25,7 +25,7 @@ define LXCFS_BUILD_CMDS
 endef
 
 define LXCFS_INSTALL_TARGET_CMDS
-	$(TARGET_MAKE_ENV) $(MAKE) -C $(@D) install
+	$(TARGET_MAKE_ENV) $(MAKE) -C $(@D) install prefix=$(TARGET_DIR)/usr
 endef
 
 
